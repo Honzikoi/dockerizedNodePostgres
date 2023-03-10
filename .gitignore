@@ -1,9 +1,14 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/node_modules
-/back/node_modules
-/front/node_modules
+# Ignore node_modules in the back directory
+back/node_modules/
+
+# Ignore node_modules in the front directory
+front/node_modules/
+
+# next time, use `**/node_modules/
+
 /.pnp
 .pnp.js
 

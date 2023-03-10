@@ -11,7 +11,7 @@ FROM node:14-alpine as frontend
 WORKDIR /app
 COPY ./front/package*.json ./
 RUN npm install
-COPY ./front /app/front
+COPY ./front /app/
 RUN npm run build
 
 # Run the app with Postgres
